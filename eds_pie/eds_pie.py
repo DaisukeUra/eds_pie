@@ -105,7 +105,7 @@ import json
 from datetime import datetime, date, time
 from string   import digits
 
-import cip_eds_types as EDS_Types
+import .cip_eds_types as EDS_Types
 
 import logging
 logging.basicConfig(level=logging.WARNING,
