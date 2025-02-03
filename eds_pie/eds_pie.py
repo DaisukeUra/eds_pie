@@ -108,9 +108,10 @@ from string   import digits
 from . import cip_eds_types as EDS_Types
 
 import logging
-logging.basicConfig(level=logging.WARNING,
-    format='%(asctime)s - %(name)s.%(levelname)-8s %(message)s')
+
 logger = logging.getLogger(__name__)
+logger.setLevel(logging.DEBUG)  # 必要に応じてデフォルトレベルを設定
+
 #-------------------------------------------------------------------------------
 EDS_PIE_VERSION     = '0.1'
 EDS_PIE_RELASE_DATE = '3 Nov. 2020'
